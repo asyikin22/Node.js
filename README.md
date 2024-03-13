@@ -1,9 +1,9 @@
 # INTRODUCTION
 
-**WHAT IS NODE.JS**
+**WHAT IS NODE.JS?**
 * It is a runtime environment that allows developers to run JavaScript on a server outside a web browser
 * We can write application on the server when it could previously only be written in web browser.
-* It allows developers to write a FULL STACK applicatio in a single language.
+* It allows developers to write a FULL STACK application in a single language.
 
 **HOW TO INSTALL NODE.JS?**
 * We can check and see if Node.js has been installed in our computer via git bash terminal
