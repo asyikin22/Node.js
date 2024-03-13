@@ -16,7 +16,7 @@
   ![image](https://github.com/asyikin22/Node.js/assets/148519441/13922a98-7193-41a2-afe5-7ca4e3838a82)
 
 **WHAT IS REPL?**
-* It is an interactive programming environment that is used to quickly test code snippets, experiment with language features and perform quickly calculations or tasks withput the need to create a separate script or file.
+* It is an interactive programming environment that is used to quickly test code snippets, experiment with language features and perform quickly calculations or tasks without the need to create a separate script or file.
 *   1. **Read**: Read user input
     2. **Evaluate**: Evaluate user input
     3. **Print**: print result to the console
