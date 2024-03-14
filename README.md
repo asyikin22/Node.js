@@ -100,6 +100,32 @@
   
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/f5a53ae0-c717-48ef-a196-cc0d0254df19)
 
+# BUILT-IN MODULE
+Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.html#path)
+
+**PATH MODULE**
+* The path module provides utilities for working with file and directory paths.
+* Once the module is loaded, we can access various properties and method exposed by that module
+* It can be accessed using:
+  
+![image](https://github.com/asyikin22/Node.js/assets/148519441/d3d38e8b-5bf9-4a09-a8cb-07106996d8b4)
+* What does this mean?
+  1. We call the module using require function
+  2. Get the result which is an object.
+  3. Store it in a constant
+ 
+**Let's experiment wiht PATH MODULE!**
+* Input built-in module on top of the code editor
+* We will play around with:
+  1. **path** (file name & directory)
+  2. **Base name** - returns the last portion of a path
+  3. **Extension name** - returns the extension of the path
+  4. **Parse method** - returns an object whose properties represent significant elements of the path
+  5. **Format method** - returns a path string from an object
+  6. **Join method** - joins all given 'path' segments together using the platform-specific separator as a delimiter
+* The table below summarizes how we can use the built-in module inside code editor and their corresponding output in terminal
+  
+  ![image](https://github.com/asyikin22/Node.js/assets/148519441/e91954fc-78a0-4732-b0a9-83cce17e3d93)
 
 
 
