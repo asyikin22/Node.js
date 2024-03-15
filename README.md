@@ -127,6 +127,80 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
   
   ![image](https://github.com/asyikin22/Node.js/assets/148519441/e91954fc-78a0-4732-b0a9-83cce17e3d93)
 
+# FILE SYSTEM
+**AIM**: It allows you to work with the file system on your computer
+
+**Use 'require' function to use built in module**:
+* To make use of a built-in module, we have to input it first by using 'require' function.
+* 'node:fs' is the name of our built-in module
+* Once this is loaded, we can access various properties and methods exposed by the fs module
+  
+  ![image](https://github.com/asyikin22/Node.js/assets/148519441/c843a3e8-a164-4cfa-9de8-d7d3025a5684)
+
+**Read file with readFileSync (SYNCHRONOUSLY)**
+* Link to documentation - https://nodejs.org/docs/latest/api/fs.html#fsreadlinksyncpath-options
+* We are going to learn how to read the contents of a file synchronously.
+  1. Sync tells use the method is a synchronous way of reading a file
+  2. JS engine will read till the file contents are read before moving on to the next line
+* Let's create a new filed called file.tx with some text in it
+* Inside fs.js (our main file) we are going to invoke a method called readFileSync.
+    1. To this method, we pass in the path to the file we want to read ("./file.txt")
+    2. We then capture the return value in a constant called fileContent
+    3. Log it to the console
+* Once we logged it, the terminal will show buffer with binary data so we have to view it in human readable format. We need to set a second argument in the function 'utf-8' 
+* When we save the code and re-run it, the terminal will show the actual text in file.txt
+
+  ![image](https://github.com/asyikin22/Node.js/assets/148519441/3111a964-f029-4e74-a64c-f3c8a6c239c7)
+
+**Read file with readFile (ASYNCHRONOUSLY)**:
+* Link to documentation - https://nodejs.org/docs/latest/api/fs.html#fsreadfilepath-options-callback
+* Node.js is asynchronous, it has features to do tasks without blocking the main thread  ---> We can do this with readFile method.
+* Let's break down its syntax:
+  1. First argument: "./file.txt"
+  2. Second argument is a 'callback function' which will be invoked after the file contents have been read (A function that is passed as an argument to another function is a callback function)
+  3. Callback function has two parameters, 'error' and 'data'
+		* Error is the error that was identified when reading the file if there was any
+      * If there was no error, it is set to null and data is populated with the file contents
+  4. Function body: if and else
+  5. Now we have to add 'utf-8' as a second argument instead to make it readable.
+
+  ![image](https://github.com/asyikin22/Node.js/assets/148519441/cb7bdcd5-f502-4364-9ba1-064f1d442e6b)
+
+  **Write file with writeFile (SYNCHRONOUSLY)**
+  * Link to documentation - https://nodejs.org/docs/latest/api/fs.html#fswritefilesyncfile-data-options
+  * We are going to use write method with synchronous version, writeFileSync
+  * The syntax involved:
+      1. First argument is the path to the file: "./hello.txt" ---> Please note that the file does not exist before we run this code!
+      2. Second argument is the file content: "Hello World!"
+      3. When we run the code in fs.js, a new file called 'hello.txt' is created with "Hello World!" as the content.
+  ![image](https://github.com/asyikin22/Node.js/assets/148519441/25f7ccba-19dd-41ab-9bcb-2132c017153b)
+
+**Write file with writeFile (ASYNCHRONOUSLY)**
+* Link to documentation - https://nodejs.org/docs/latest/api/fs.html#fswritefilefile-data-options-callback
+* We are going to use write method with ASYNCHRONOUS version
+* The syntax involved:
+  1. First argument is the path to the file: "./hello.txt"
+  2. Second argument is the file content: "Hello Asyikin"
+  3. Third argument is 'error first callback'
+  4. In the function body, check for an error with if else 
+       * If error exists, we log it to the console.
+       * If no error detected, we will display "File Written"
+  5. When we run this code, the updated text is "Hello Asyikin" instead of "Hello Word!"
+       * By default, writeFile overwrite content of sync file.
+         
+ ![image](https://github.com/asyikin22/Node.js/assets/148519441/548946b9-368e-4451-a50a-a698d7af889d)
+
+ **How to append file content from writeFileSync (Synchronous version) to writeFile (Asynchronous version)**
+ * Add a THIRD argument, it is an object called { flag: "a" } -
+ * 'a' stands for append.
+ * Add a space before " Hello Asyikin" so we can have a new file content updated to "Hello World! Hello Asyikin!"
+   
+![image](https://github.com/asyikin22/Node.js/assets/148519441/ab54cb9b-0983-4b39-82ab-c9e629172601)
+
+
+
+     
+  
 
 
 
