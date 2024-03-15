@@ -1,13 +1,13 @@
 const fs = require("node:fs");
 
-console.log("FIRST");
+// console.log("FIRST");
 
 //readFileSync - read file synchronously
-const fileContent = fs.readFileSync("./file.txt", "utf-8")
+const fileContent = fs.readFileSync("./file.txt","utf-8")
 
 console.log(fileContent);
 
-console.log("SECOND");
+// console.log("SECOND");
 
 //readFile - read file asynchronously
 fs.readFile("./file.txt", "utf-8", (error, data) => {
@@ -18,12 +18,12 @@ fs.readFile("./file.txt", "utf-8", (error, data) => {
     }
 });
 
-console.log("THIRD");
+// console.log("THIRD");
 
 //Write content into a file - synch
 fs.writeFileSync("./hello.txt", "Hello World!");
 
-//Write content into a file - Asynch (this will overwrite async file)
+// //Write content into a file - Asynch (this will overwrite sync file)
 // fs.writeFile("./hello.txt", "Hello Asyikin",(err) => {
 //     if (err) {
 //         console.log(err);
