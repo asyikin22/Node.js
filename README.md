@@ -59,8 +59,9 @@
 * We can skip specifying JS extension(.js) as node.js will infer it on our behalf.
 
 
-**require vs module.exports**
-* These two are part of the module system in Node.js that enables you to break your code into smaller, reusable modules
+**require & module.exports**
+* These two are part of the BUILT-IN module system in Node.js that enables you to break your code into smaller, reusable modules
+* I am placing these two under 'LOCAL MODULE' to demonstrate its most basic usage WITHIN local module.
 * They help manage dependencies between separate modules/files
 
 **require function**
