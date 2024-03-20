@@ -198,6 +198,62 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
    
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/ab54cb9b-0983-4b39-82ab-c9e629172601)
 
+# BUILD A HTTP SERVER IN NODE.JS
+
+**OBJECTIVE**: 
+* How to build a basic HTTP server in node.
+* It shows the first step in backend development with node creating server that can serve up files in reponse to a request made from the client
+
+**STEP-BY-STEP**:
+1. Server is going to run locally in my computer and I'll be able to access it through a given port.
+2. First thing we need to do is to load the http package into the script.
+3. Create a createServer method, store it in const variable.
+   * Pass a callback function into create server with 2 parameters, req and re
+5. Specify port number (i.e. 3000)
+   * Store it in a variable
+   * Use method 'server.listen' to make sure it's up and running
+   * Pass a callback function to log a message saying 'Server running on port 3000".
+  
+**HOW TO START THE SERVER**:
+* Go to terminal and type 'node script.js'
+* It will log a message that says 'Server running on port 3000".
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/b6be571f-8535-454e-8d88-9b4334f182f4)
+
+**HOW TO VIEW IT IN OUR LOCAL HOST?**:
+* Type local host and specify the local port(3000)
+* It will not load on the web page because we need to end the response in our code
+* To fix this, we need to write a response rather than dealing with the request.
+  1. provide a status code: 200
+  2. Specify what kind of response it's going to be  by setting a header using setHeader method with 2 parameters, Content-Type and 'text/plain'
+  3. Write a response using writeMethod
+  4. End the response by writing res.end()
+     
+     ![image](https://github.com/asyikin22/Node.js/assets/148519441/8edb8073-629b-4bc3-b95c-dec78f33a9f1)
+
+
+**HOW CAN WE SERVE UP OTHER FILE USING NODE JS?**:
+* Change the content type from 'plain' to 'html'
+* Create an html file
+* We need to access the html file in our node script - using file system (fs)
+* Load the file system module: const fs = require('fs');
+* Make a request to the file system so we can access index.html file to serve that up.
+* Make that request inside a 'try catch' syntax
+  1. Use 'readFileSync' and pass 'index.html' as an argument - store it in variable called 'html'
+  2. Write a response specifying 'html' content as the data that will be sent to the server
+  3. Add res.end() to end the response. * If there is an error, we tell the server to respond with 404, log a message that says 'Bad request' and end the response.
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/bb2f8c0e-3932-46d6-bbcd-220910ad2fa2)
+
+**WHAT DOES IT LOOK LIKE ON OUR WEB PAGE WHEN AN ERROR IS CAUGHT?**:
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/582d6978-41e3-4011-bdc6-f6605ea1f1bb)
+
+
+
+
+
+
 
 
      
