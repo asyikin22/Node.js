@@ -277,6 +277,23 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/6c9130fb-6763-47be-b40a-5b3fde8c1156)
 
+# EVENT LOOPS
+
+**DEFINTION**: The event loop is what allows Node.js to perform non-blocking I/O operations
+* despite the fact that JavaScript is single-threaded
+* by offloading operations to the system kernel whenever possible.
+
+**SOURCE**: https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick#event-loop-explained
+<BR>
+
+**4 EXAMPLES OF EVENT LOOP**
+* Read file
+* setTimeout()
+* setInterval()
+* server
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/7bd3def5-f0e6-42e6-80bd-2d00fdac27cb)
+
 
 
 
