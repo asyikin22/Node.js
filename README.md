@@ -249,6 +249,38 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/582d6978-41e3-4011-bdc6-f6605ea1f1bb)
 
+# NODE PACKAGE MANAGER
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/82f16a92-49d3-4b9c-8635-2f440fe3c894)
+
+# Package.json 
+
+**npm init vs npm init -y**:
+![image](https://github.com/asyikin22/Node.js/assets/148519441/37782c91-d412-4f04-8efc-10d141c67c76)
+
+**INSTALL NPM PACKAGE AS DEPENDENCY**:
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/42394694-3fc0-4eb2-a985-d2a1a8e4bb61)
+
+**INSTALL NPM PACKAGE AS DEVDEPENDENCY**:
+* Note the difference between Dependency and devDependency
+* 'nodemon' as a package is NOT needed in production as compared to 'lodash'
+* It is used to restart our application and we don’t have to type 'node <file name>' every time we make changes
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/ef6822e8-1e30-4c1b-96de-4d6629750dd6)
+
+**IGNORE NODE MODULES FILES THAT ARE TOO BIG**:
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/287c0671-d2ef-4d4c-ac45-8c22bfd7e71b)
+
+**UNINSTALL A PACKAGE**:
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/6c9130fb-6763-47be-b40a-5b3fde8c1156)
+
+
+
+
+
 
 
 
