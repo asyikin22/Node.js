@@ -294,6 +294,47 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/7bd3def5-f0e6-42e6-80bd-2d00fdac27cb)
 
+# ASYNCHRONOUS PATTERNS - CALLBACKS, PROMISES, ASYNC-AWAIT
+
+**CALLBACKS**:
+* Functions that are passed as arguments to other functions
+* They are invoked alter after asynchronous operation completes
+* Node.js registers a callback function to be executed upon completion which allows it to execute other codes while waiting for operation to finish.
+
+**ERROR-FIRST CALLBACKS**:
+* Used in node.js to handle error in asynchronous functions.
+* Callback function passed to an async function as an arguments
+* Patterns of callbacks:
+  1. First parameter of callback function is reserved for an error object
+  2. If error occurs during execution of function, the parameter will contain error object ('ERROR')
+  3. If no error occurs, it will be 'null' or 'undefined'
+  4. Second parameter that contains successful result ('data') will be returned.
+   
+![image](https://github.com/asyikin22/Node.js/assets/148519441/9f121e3b-b825-4a45-9203-3017ed33c8d1)
+
+**PROMISE:**
+* An object representing the eventual completion or failure of an asynchronous operation.
+* It allows you to handle asynchronous operations in a more elegant and readable way
+* It has 3 states: pending, fulfilled, rejected.
+* 2 main methods: 'then()' and 'catch()'
+  
+![image](https://github.com/asyikin22/Node.js/assets/148519441/47f2d3d3-f5ae-415a-83ac-8806ea900163)
+
+
+
+**ASYNC-AWAIT**:
+![image](https://github.com/asyikin22/Node.js/assets/148519441/b61f4490-85c5-4590-a385-581e5bbb1cab)
+
+
+**COMPARISON BETWEEN CALLBACK, PROMISE AND ASYNC-AWAIT**: USING FS MODULE TO TO READ FILE INSIDE TEXT.TXT FILE
+![image](https://github.com/asyikin22/Node.js/assets/148519441/1724d58c-d864-4091-8c1c-c1fa1ea06f67)
+
+
+
+
+
+
+
 
 
 
