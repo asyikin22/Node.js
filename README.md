@@ -329,6 +329,18 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 **COMPARISON BETWEEN CALLBACK, PROMISE AND ASYNC-AWAIT**: USING FS MODULE TO TO READ FILE INSIDE TEXT.TXT FILE
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/1724d58c-d864-4091-8c1c-c1fa1ea06f67)
 
+# EVENT
+
+**EVENT MODULE**
+* Built-in module that allows us to work with events in Node.js
+* It is an action or an occurrence that's happened in our application that we can respond to
+* We can dispatch our own custom events and respond to those custom events in non-blocking manner
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/16b1dc7d-02f9-40b6-8e4e-e3cea12fa5e3)
+
+**EVENT-DRIVEN PROGRAMMING EXAMPLE - ORDERING PIZZA**
+![image](https://github.com/asyikin22/Node.js/assets/148519441/7432e5e2-750a-471d-ab9a-460ddd3940f9)
+
 
 
 
