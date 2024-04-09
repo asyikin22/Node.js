@@ -10,6 +10,7 @@ console.log(first, second)
 
 //the first parameter is the name of the file that we want to create
 //second parameter is the content of the file
+
 writeFileSync('./content/result-sync.txt', 
 `Here is the result : ${first}, ${second}`
 )
