@@ -338,8 +338,46 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/16b1dc7d-02f9-40b6-8e4e-e3cea12fa5e3)
 
+**EVENT-DRIVEN PROGRAMMING**
+
+**Basic Setup**
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/63410613-b932-4768-a5cc-a75c55c4e934)
+
+**Additional Info**
+* We can have as many functions as we'd like and emit it
+* Emit method cannot precede on method as we need to listen to the event first
+* We can pass arguments when we're emitting the event
+  
+![image](https://github.com/asyikin22/Node.js/assets/148519441/b10b1e77-9458-41ed-bdc6-be91d0d46150)
+
+
 **EVENT-DRIVEN PROGRAMMING EXAMPLE - ORDERING PIZZA**
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/7432e5e2-750a-471d-ab9a-460ddd3940f9)
+
+# STREAM AND BUFFER
+
+* Stream allows us to start using data before it has finished loading
+* Some files are very large and it takes some time to read them
+* Small chunks of data are packaged up into buffer and then sent down stream every time the buffer fills
+* Example: Streaming Netflix & Youtube
+* A little bits of data are sent to the browser a bit at a time so you can start watching w/o having to wait for the whole video to finish loading
+
+**CREATE BIG FILES**
+* To demonstrate how we can use stream function, I will first create a very big file.
+* 'Hello World' string is written 5000 times into a new file called big.txt.
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/bf134812-ed1a-4dbe-9346-76bcb883aea0)
+
+
+**STREATMS - createReadStream function**
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/9d5f88af-5315-4c7d-b3b9-c76673b609cc)
+
+
+
+
+
 
 
 
