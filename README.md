@@ -351,9 +351,13 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
   
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/b10b1e77-9458-41ed-bdc6-be91d0d46150)
 
-
 **EVENT-DRIVEN PROGRAMMING EXAMPLE - ORDERING PIZZA**
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/7432e5e2-750a-471d-ab9a-460ddd3940f9)
+
+**BASIC REQUEST EVENT - HTTP**
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/4c02b80c-751a-4352-bdfc-ac0c6081496f)
+
 
 # STREAM AND BUFFER
 
