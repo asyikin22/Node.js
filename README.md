@@ -374,9 +374,30 @@ Source: Node.js Documentation (Link: https://nodejs.org/docs/latest/api/path.htm
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/bf134812-ed1a-4dbe-9346-76bcb883aea0)
 
 
-**STREATMS - createReadStream function**
+**STREAMS - createReadStream function**
 
 ![image](https://github.com/asyikin22/Node.js/assets/148519441/9d5f88af-5315-4c7d-b3b9-c76673b609cc)
+
+**STREAMS - HTTP Application**
+
+**1) ACCESSING FILE USING READFILE FUNCTION**:
+
+![image](https://github.com/asyikin22/Node.js/assets/148519441/37631c6e-d7de-4fc8-914f-29d2c134e585)
+
+**ACCESSING FILE USING READSTREAM FUNCTION (Re-factor from readFile function)**:
+
+* The problem with using readFile function is the data we are sending users are way too big
+* We will use pipe() method to efficiently stream data from a readable steam directly to writeable stream such as the response object (res)
+* Writeable stream - represents a destination for data to be written
+  1. Files
+  2. Network sockets
+  3. HTTP responses (the one we are using in the example)
+     
+![image](https://github.com/asyikin22/Node.js/assets/148519441/c74732f9-3b95-42ba-9111-0e5d6abe3aec)
+
+
+
+
 
 
 
